@@ -1,0 +1,63 @@
+cartao_1952_ano
+1_Acompanhei a criacao da CNBB.
+2_Vi Getulio Vargas criar o BNDE.
+3_Chorei a morte do cantor Francisco Alves.
+4_Vi Fulgencio Batista assumir o poder em Cuba.
+5_Chorei a morte de Eva Peron.
+6_!pqh
+7_Assisti a deposicao do rei Faruk, no Egito.
+8_Comprei o primeiro exemplar da revista Manchete.
+9_Vi a criacao do personagem Mazzaropi.
+10_Assisti ao filme "Tico-Tico no Fuba".
+11_Acompanhei a Olimpiada num pais da Escandinavia.
+12_!pv
+13_Vi o brasileiro Adhemar Ferreira da Silva voltar da Olimpiada como um heroi.
+14_Vi os Estados Unidos detonarem uma bomba de hidrogenio.
+15_Acompanhei a criacao do Instituto do Cafe.
+16_Aplaudi o filme "Sinfonia de Paris", ganhador do Oscar.
+17_Acompanhei a primeira operacao feita em um coracao aberto.
+18_!v1
+19_Ri muito com a estreia da "Escolinha do Professor Raimundo" no radio.
+20_Vi as primeiras experiencias com televisores em cores.
+cartao_Portugal_lugar
+1_!a2
+2_O bacalhau e um dos meus pratos tipicos.
+3_!pv
+4_O Mosteiro dos Jeronimos e um dos meus cartoes postais.
+5_Meus cidadaos sao alvos de muitas piadas.
+6_A cidade de Evora faz parte de mim.
+7_Sou um pais da Europa.
+8_Pedro Alvares Cabral faz parte de minha historia.
+9_Tenho a universidade mais antiga do mundo.
+10_O Algarve faz parte de mim.
+11_!pqh
+12_O Brasil faz parte de minha historia.
+13_O vinho e a minha bebida favorita.
+14_Fernando Pessoa me conhece muito bem.
+15_Fico na Peninsula Iberica.
+16_Sou um pais europeu.
+17_A Torre de Belem e uma de minhas atracoes.
+18_Luis de Camoes me conhece muito bem.
+19_Fiz grandes conquistas maritimas.
+20_Minha moeda e o escudo.
+cartao_Torre Eiffel_coisa
+1_Celebro uma Exposicao Mundial.
+2_Sou obra humana.
+3_Sou um marco.
+4_Sou uma grande atracao turistica.
+5_Sou europeia.
+6_Levaram quase 27 meses para me construir.
+7_Devo meu nome a meu criador.
+8_Fui construida no seculo 19.
+9_!pqh
+10_Sou uma obra de arte tecnologica.
+11_!v3
+12_Sou de ferro.
+13_!pv
+14_Tenho uma antena de radio.
+15_!jv5
+16_Sou maior que um poste.
+17_!a6
+18_Voce nao precisa me escalar - tenho elevador.
+19_Tenho 12000 partes.
+20_Tenho 2.5 milhoes de rebites.

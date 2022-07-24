@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 #include "auxiliar.c"
 #include "cartao.c"
 #include "game.c"
@@ -6,7 +8,7 @@
 void v_menu();
 
 int main() {
-    char c;
+    char c='0';
     while(1){
         v_menu();
         c=getc(stdin);
