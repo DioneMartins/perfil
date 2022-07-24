@@ -24,7 +24,7 @@ void m_cartoes(){
 
 int cadastra_c(){
     FILE *file;
-    char nome[51], categoria[7], dicas[20][101], opcao='0';
+    char nome[51], categoria[10], dicas[20][101], opcao='0';
     int i=1;
 
     file = fopen("banco.txt", "a+");
@@ -38,7 +38,7 @@ int cadastra_c(){
         printf("Objeto do cartao [50]: ");
         fgets(nome, 50, stdin);
         printf("Categoria[pessoa/lugar/coisa/ano]: ");
-        fgets(categoria, 7, stdin);
+        fgets(categoria, 9, stdin);
         categoria[strlen(categoria)-1] = '\0'; /*Remove \n no final*/
         for(i=0; i<strlen(categoria); i++) categoria[i]=tolower(categoria[i]);
         if(strcmp(categoria, "pessoa")==0 || strcmp(categoria, "lugar")==0 ||
