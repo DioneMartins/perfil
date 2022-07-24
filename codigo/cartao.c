@@ -88,11 +88,59 @@ int cadastra_c(){
 }
 
 int exclui_c(){
-    printf("exclui\n");
+    FILE *infile, *outfile;
+    char nome[51], categoria[10], dicas[20][102], deletavel[51];
+    int i, encontrado=0;
+
+    infile=fopen("banco.txt", "r+");
+    outfile=fopen("newbanco.txt", "w+");
+    if(infile==NULL || outfile==NULL){
+        printf("Erro abrindo arquivo.\n");
+        return 1;
+    }
+
+    printf("Carta a ser deletada: \n"); fgets(deletavel, 50, stdin);
+    deletavel[strlen(deletavel)-1] = '\0'; /*Remove \n no final*/
+    
+    while(!feof(infile)){
+        fscanf(infile, "cartao_%[^_]%*c%[^\n]", nome, categoria); fgetc(infile);
+        if(!feof(infile) && strcmp(nome, deletavel)!=0) {
+            fprintf(outfile, "cartao_%s_%s\n", nome, categoria);
+            for(i=0; i<20; i++){
+                fgets(dicas[i], 102, infile);
+                fputs(dicas[i], outfile);
+            }
+        }
+        else encontrado=1;
+    }
+    fclose(infile); fclose(outfile);
+    if(!encontrado) printf("Nao encontrado.\n");
+    else{
+        remove("banco.txt");
+        rename("newbanco.txt", "banco.txt");
+    }
     return 0;
 }
 
 int conta_c(){
-    printf("conta\n");
+    FILE *file;
+    char descarte[120];
+    int i=0;
+
+    file=fopen("banco.txt", "r+");
+    if(file==NULL){
+        printf("Erro abrindo arquivo.\n");
+        return 1;
+    }
+    
+    while(!feof(file)){
+        fgets(descarte, 120, file);
+        if(descarte[0]=='c' && descarte[1]=='a' && descarte[2]=='r' &&
+            descarte[3]=='t' && descarte[4]=='a' && descarte[5]=='o') i++;
+    }
+    fclose(file);
+    printf("Seu jogo tem %d cartoes.\n", i);
+    printf("Pressione enter para continuar.\n");
+    flush();
     return 0;
 }
