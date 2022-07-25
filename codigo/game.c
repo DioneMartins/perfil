@@ -47,7 +47,7 @@ int i_jogo(){
 
     for(i=0; i<c; i++) {
         jog[i]=cadastra_jogador(i);
-        if(jog[i].nome[0]='\0'){
+        if(jog[i].nome[0]=='\0'){
             printf("Nome em branco.\n");
             flush();
             return 1;
