@@ -35,7 +35,6 @@ int markd(char *dica){
                 break;
         }
     }
-    else return 0;
     return 0;
 }
 
@@ -44,7 +43,7 @@ void printd(int i, char *dica, int printnum){
     if(printnum) printf("%d. ", i);
     x=markd(dica);
     switch(x){
-        case 0: puts(dica);
+        case 0: puts(dica); break;
         case 1: printf("Perca a vez.\n\n"); break;
         case 2: printf("Um palpite a qualquer hora.\n\n"); break;
         case 3: printf("Avance %c espacos.\n\n", dica[2]); break;
