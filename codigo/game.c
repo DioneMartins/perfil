@@ -44,7 +44,7 @@ int i_jogo(){
 }
 
 int m_jogo(JOGADOR jog[], int count){
-    int i=0, j=i+1, vencedor=-1, total_c=0, r=0, x=0, y=0, uso=0;
+    int i=0, j=i+1, vencedor_jogo=-1, vencedor_rodada=-1, total_c=0, r=0, x=0, y=0, uso=0, z=0, para_andar=0;
     char ideia[50]; int opcao_dica=0;
     FILE *file;
     CARTAO cartao;
@@ -81,34 +81,76 @@ int m_jogo(JOGADOR jog[], int count){
                 printf("Atencao, mesa... ");
                 printd(0, cartao.dicas[opcao_dica-1], 0);
                 cartao.dicas_usadas[y]=opcao_dica;
-                y++;
-                j++; if(j==count) j=1;
-                printf("\nJogador %s... Qual e o seu palpite? [50] ", jog[j].nome);
-                fgets(ideia, 50, stdin);
-                ideia[strlen(ideia)-1] = '\0';
-                if(strcmp(ideia, cartao.nome)==0) {
-                    printf("... Correto!\n");
+                if(cartao.dicas[opcao_dica-1][0]!='!'){
+                    printf("\nJogador %s... Qual e o seu palpite? [50] ", jog[j].nome);
+                    flush();
+                    fgets(ideia, 50, stdin);
+                    ideia[strlen(ideia)-1] = '\0';
+                    uppercase(ideia, strlen(ideia));
+                    if(strcmp(ideia, cartao.nome)==0) {
+                        printf("... Correto!\n");
+                        vencedor_rodada=j;
+                        break;
+                    }
+                    else {
+                        if(ideia[0]!='\0') printf("... Incorreto!\n");
+                        y++;
+                        j++; if(j==count) j=1;
+                    }
+                }
+                else{
+                    z=markd(cartao.dicas[y]);
+                    switch(z){
+                        case 2: jog[j].ficha=1; break;
+                        case 3: jog[j].casa+=(int)(cartao.dicas[y][2]); break;
+                        case 4: jog[j].casa-=(int)(cartao.dicas[y][2]); break;
+                        case 5:
+                            while(1){
+                                para_andar=0;
+                                printf("Que jogador você escolhe? (exceto si mesmo) \n");
+                                fgets(ideia, 50, stdin); flush();
+                                ideia[strlen(ideia)-1] = '\0';
+                                if(strcmp(ideia, jog[j].nome)) printf("Voce nao pode escolher a si mesmo!");
+                                else for(opcao_dica=0; opcao_dica<count; opcao_dica++){
+                                    if(strcmp(ideia, jog[opcao_dica].nome)==0) {
+                                        jog[opcao_dica].casa+=(int)(cartao.dicas[y][3]);
+                                        para_andar=1;
+                                        break;
+                                    }
+                                }
+                                if(!para_andar) printf("Jogador nao encontrado.\n");
+                                else break;
+                            }
+                            break;
+                        case 6:
+                            while(1){
+                                para_andar=0;
+                                printf("Que jogador você escolhe? (exceto si mesmo) \n");
+                                fgets(ideia, 50, stdin); flush();
+                                ideia[strlen(ideia)-1] = '\0';
+                                if(strcmp(ideia, jog[j].nome)) printf("Voce nao pode escolher a si mesmo!");
+                                else for(opcao_dica=0; opcao_dica<count; opcao_dica++){
+                                    if(strcmp(ideia, jog[opcao_dica].nome)==0) {
+                                        jog[opcao_dica].casa-=(int)(cartao.dicas[y][3]);
+                                        para_andar=1;
+                                        break;
+                                    }
+                                }
+                                if(!para_andar) printf("Jogador nao encontrado.\n");
+                                else break;
+                            }
+                            break;
+                    }
                 }
             }
+            if(vencedor_rodada!=-1) printf("Fim da rodada...\n");
+            else if(y==19) printf("Fim da rodada...\n");
+            printf("\nPressione enter para continuar.\n"); flush(); clear();
         }
+        y=0; vencedor_rodada=-1;
     }
     return 0;
 }
-
-/*
-Mediador: Dione(1)
-Jogador da vez: Leo(1)
-Próximo jogador: Valéria(1)
-
-Eu sou... um lugar!
-Dicas: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
-
-Pronto, jogador Leo... Que dica você quer? `2`
-Atenção, mesa... Não tenho satélites.
-
-Jogador Leo, qual é seu palpite? ` `
-...
-*/
 
 int s_jogo(JOGADOR jog){
     printf("Singleplayer\n");

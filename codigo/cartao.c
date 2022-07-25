@@ -80,6 +80,7 @@ int cadastra_c(){
 
     /*Armazena em arquivo*/
     nome[strlen(nome)-1] = '\0'; /*Remove \n no final*/
+    uppercase(nome, strlen(nome));
     fprintf(file, "cartao_%s_%s\n", nome, categoria);
     for(i=0; i<20; i++){
         dicas[i][strlen(dicas[i])-1] = '\0'; /*Remove \n no final*/

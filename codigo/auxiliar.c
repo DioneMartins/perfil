@@ -16,26 +16,42 @@ void printc(char *categoria){
     puts(categoria);
 }
 
-void printd(int i, char *dica, int printnum){
-    if(printnum) printf("%d. ", i);
+int markd(char *dica){
     if(dica[0]=='!'){
         switch(dica[1]){
             case 'p':
-                if(dica[2]=='v') printf("Perca a vez.\n\n");
-                else printf("Um palpite a qualquer hora.\n\n");
+                if(dica[2]=='v') return 1;
+                else return 2;
                 break;
             case 'a':
-                printf("Avance %c espacos.\n\n", dica[2]);
+                return 3;
                 break;
             case 'v':
-                printf("Volte %c espacos.\n\n", dica[2]);
+                return 4;
                 break;
             case 'j':
-                if(dica[2]=='a') printf("Escolha um jogador para avancar %c espacos.\n\n", dica[3]);
-                else printf("Escolha um jogador para voltar %c espacos.\n\n", dica[3]);
+                if(dica[2]=='a') return 5;
+                else return 6;
                 break;
         }
-    }else puts(dica);
+    }
+    else return 0;
+    return 0;
+}
+
+void printd(int i, char *dica, int printnum){
+    int x=0;
+    if(printnum) printf("%d. ", i);
+    x=markd(dica);
+    switch(x){
+        case 0: puts(dica);
+        case 1: printf("Perca a vez.\n\n"); break;
+        case 2: printf("Um palpite a qualquer hora.\n\n"); break;
+        case 3: printf("Avance %c espacos.\n\n", dica[2]); break;
+        case 4: printf("Volte %c espacos.\n\n", dica[2]); break;
+        case 5: printf("Escolha um jogador para avancar %c espacos.\n\n", dica[3]); break;
+        case 6: printf("Escolha um jogador para voltar %c espacos.\n\n", dica[3]); break;
+    }
 }
 
 int randint(int n) {
@@ -49,4 +65,12 @@ int randint(int n) {
         y=x+p;
     }
     return i;
+}
+
+void uppercase(char *string, int n){
+    int i=0; char *pointer;
+    for(i=0; i<n; i++){
+        pointer=string+i;
+        *pointer=toupper(*pointer);
+    }
 }

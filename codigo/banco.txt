@@ -19,7 +19,7 @@ cartao_1952_ano
 18_!v1
 19_Ri muito com a estreia da "Escolinha do Professor Raimundo" no radio.
 20_Vi as primeiras experiencias com televisores em cores.
-cartao_Portugal_lugar
+cartao_PORTUGAL_lugar
 1_!a2
 2_O bacalhau e um dos meus pratos tipicos.
 3_!pv
@@ -40,7 +40,7 @@ cartao_Portugal_lugar
 18_Luis de Camoes me conhece muito bem.
 19_Fiz grandes conquistas maritimas.
 20_Minha moeda e o escudo.
-cartao_Torre Eiffel_coisa
+cartao_TORRE EIFFEL_coisa
 1_Celebro uma Exposicao Mundial.
 2_Sou obra humana.
 3_Sou um marco.
