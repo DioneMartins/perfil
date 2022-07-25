@@ -297,7 +297,7 @@ void palpite_a_qualquer_hora(JOGADOR jog[], int n, char *input, int jog_atual, R
         }
     }
     if(!encontrado){
-        printf("Jogador nao encontrado ou formato incorreto.\n");
+        printf("Jogador nao encontrado ou formato incorreto.\n"); flush();
         palpite(jog[jog_atual], rodada, input, jog_atual, &rodada.vencedor, 0);
     }
 }
