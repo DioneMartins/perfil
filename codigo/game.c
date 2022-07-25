@@ -45,7 +45,14 @@ int i_jogo(){
     }
     clear();
 
-    for(i=0; i<c; i++) jog[i]=cadastra_jogador(i);
+    for(i=0; i<c; i++) {
+        jog[i]=cadastra_jogador(i);
+        if(jog[i].nome[0]='\0'){
+            printf("Nome em branco.\n");
+            flush();
+            return 1;
+        }
+    }
 
     m_jogo(jog, c);
     free(jog);
@@ -177,6 +184,7 @@ int m_jogo(JOGADOR jogadores[], int count){
                                             for(x=0; x<count; x++){
                                             if(strcmp(string_input, jogadores[x].nome)==0) {
                                                 jogadores[x].casa-=((rodada.cartao.dicas[int_input-1][3])-'0');
+                                                if(jogadores[x].casa<1) jogadores[x].casa=1;
                                                 andou=1;
                                                 break;
                                             }

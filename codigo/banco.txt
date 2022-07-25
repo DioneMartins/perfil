@@ -310,6 +310,26 @@ cartao_ROBERTO CARLOS_pessoa
 15_Assumi a paternidade de um filho que tive com uma fa
 16_Sempre apareco na sua casa nas vesperas de natal
 17_O azul e minha cor preferida
-18_Tenho varias superticoes
+18_Tenho varias supersticoes
 19_Fui astro de um filme a 300km/h 
-20_Sou muito amigo do "Tremendao"
+20_Sou muito amigo do "Tremendao"cartao_ALCATRAZ_lugar
+1_Localizo-me perto de uma ponte.
+2_Diziam que eu era de seguranca maxima.
+3_Meu forte nao e a liberdade.
+4_Hoje sou uma atracao turistica.
+5_Ja fui local de um forte espanhol.
+6_Estou associada com o crime americano.
+7_Estou na America do Norte.
+8_Ha agua por toda a minha volta.
+9_!pqh
+10_Tenho muitas barras.
+11_Al Capone faz parte de minha historia.
+12_Ja estive em mas companhias.
+13_!pv
+14_Estou localizada a oeste das Motanhas Rochosas.
+15_Ja fui conhecido como "A Rocha".
+16_Voce ja me viu em muitos filmes.
+17_Nos anos 70 fui atacada por indios.
+18_!v2
+19_Fico no litoral de San Francisco.
+20_Meu nome comeca com a primeira letra do alfabeto e termina com a ultima.
