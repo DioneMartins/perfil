@@ -39,6 +39,8 @@ void tutorial(){
         "jogador(0) <--- O nome de um jogador e sua posicao no tabuleiro/placar.\n"
         "Dicas:  1 2 3 4 5 6 7 8 9 X X X X X X X X X X X <--- Dicas do cartao. Dicas ja usadas sao\n"
         "marcadas por um x.\n"
+    );
+    printf(
         "\n\nPalpite a qualquer hora: Se o jogador tiver uma ficha (se tiver, naquela rodada,\n"
         "pego uma dica de 'Palpite a qualquer hora'), ele pode digitar:\n"
         "!pqh nome\n"

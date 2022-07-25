@@ -124,3 +124,192 @@ cartao_HITLER_pessoa
 18_Fui vitima de um complo.
 19_Tive grande importancia na 2a Guerra Mundial.
 20_Minha companheira se chamava Eva.
+cartao_BRANCA DE NEVE_pessoa
+1_Sou uma mulher muito bonita
+2_Ganhei um filme em 1937
+3_Macas nem sempre me fazem bem
+4_Nao sou real
+5_Cuido de uma grupo de mineiros bem pequenos
+6_Tenho pouca sorte com espelhos
+7_Fui condenada a morte por causa de minha beleza
+8_!pv
+9_Sou a pessoa mais alta em minha casa
+10_Tenho uma madastra diabolica
+11_Dentre minhas tarefas, ja fiz cafe da manha para oito
+12_Os beijos me enchem de vida
+13_Estou a espera de um Principe encantado
+14_Estou acostumada a ouvir espirros
+15_Sei como lidar com alguem zangado
+16_Minha vida esta em perigo
+17_Tenho a pele clara
+18_Atuei no primeiro desenho animado de longa metragem da historia
+19_Originalmente, fui criada por dois irm�os alemaos
+20_Meu nome sugere pureza
+cartao_1998_ano
+1_Vi um predio desabar no Rio de Janeiro
+2_Acompanhei um escandalo sexual na Casa Branca
+3_Vi o nascimento da filha de uma apresentadora de TV
+4_Chorei a morte de um cantor sertanejo
+5_Vi um frei brasileiro ser beatificado
+6_Vi a Papa Joao Paulo II visitar Cuba
+7_!pv
+8_Acompanhei a prisao de um jovem cantor viciado em drogas
+9_Chorei a morte de Frank Sinatra
+10_Vi um padre catolico estourar nas paradas de sucesso
+11_Acompanhei a saida da Carla Perez do grupo E o tchan
+12_!v2
+13_Chorei a morte de Tim Maia
+14_Vi um pais ser campeao mundial de futebol pela primeira vez
+15_Vi algo inedito na politica brasileira
+16_Fiquei triste com a morte de Nelson Goncalves
+17_!pqh
+18_Vi um campeao do iatismo perder sua perna no acidente
+19_Vibrei com o brasileiro que quebrou o recorde mundial da maratona
+20_Acompanhei o casamento de Adriane Galisteu
+cartao_1958_ano
+1_Vi o Brasil ser campeao mundial de futebol
+2_Vi a tenista Maria Esther Bueno ser campea em Wimbledon
+3_Vi o rinoceronte Cacareco receber 100 mil votos para vereador de Sao Paulo
+4_Vi o lancamento de "Gabriela cravo e canela", de Jorge Amado
+5_Vi Adalgisa Colobo ganhar o titulo de miss Brasil
+6_Vi o frescobol chegar as praias do Rio de Janeiro
+7_Vi Ruben Braga escrever "Ai de ti Copacabana"
+8_!pqh
+9_Vi Leonel Brizola assumir o governo do Rio Grande do Sul
+10_Vi o Fusca sair as ruas do Brasil
+11_Vi Pele marcar 58 gols no campeonato Paulista
+12_Vi o laque spray chegar aos supermercados
+13_!v3
+14_Vi Carlos Gonzaga lancar a versao de "Diana", primeiro sucesso do rock brasileiro
+15_Vi o lancamento da peca "Os Sete Gatinhos", de Nelson Rodrigues
+16_Vi o governo brasileiro comprar o porta-aviaos Minas Gerais
+17_Vi a estreia da peca "Eles nao usam Black Tie"
+18_Vi a cantora Mayra sofrer um acidente de carro
+19_!a2
+20_!pv
+cartao_1970_ano
+1_!v3
+2_Vi o primeiro acidente na rodovia transamazonica
+3_Vi avioes e diplomatas serem sequestrados no Brasil
+4_!pqh
+5_Vibrei com a primeira vitoria de Emerson Fittipaldi na F1
+6_Iniciei uma decada muito agitada para os brasileiros
+7_Vi o Brasil trazer uma taca do Mexico
+8_Assisti a inauguracao do maior estadio da capital Paulista
+9_Vi a estreia do espetaculo "O balcao", de Jean Genet
+10_!a4
+11_Vi a condenacao do bandido da luz vermelha
+12_Vi palestinos serem expulsos da Jordania
+13_Aplaudi a entrega do Oscar para o filme "Perdidos na Noite"
+14_Vi o fim da Guerra da Biafra
+15_!pv
+16_Chorei a morte de Oscarito
+17_Vi uma crise entre a Uniao Sovietica
+18_Apostei na recem-lancada loteria esportiva no Brasil
+19_Vi a inauguracao do estadio Rei Pele, em Maceio
+20_Vi o titulo do austriaco Jochen Rindt na Formula 1
+cartao_RENATO RUSSO_pessoa
+1_Fiz "Pais e filhos"
+2_!pv
+3_Fui lider de uma banda de rock
+4_Dado Villa Lobos foi meu companheiro
+5_Morri em outubro de 1996
+6_Vendi 5 milhoes de discos em quinze anos de carreira
+7_Fiz "Geracao Coca-Cola"
+8_!a3
+9_Meu nome verdadeiro é Renato Manfredini Junior
+10_Cantei em italiano
+11_Fiz "Eduardo e Monica"
+12_Meu ultimo disco chama-se "A Tempestade"
+13_Nasci no Rio de Janeiro
+14_Tenho um filho
+15_Criei um grupo chamado "Aborto Eletrico"
+16_Tinha 36 anos quando morri
+17_Fiz parte de uma legiao
+18_!jv4
+19_Em 1994, gravei um disco em ingles
+20_Fui professor de ingles
+cartao_WILLIAM SHAKESPEARE_pessoa
+1_Sou ingles
+2_Nasci no seculo XVI
+3_Minha rainha foi Elizabeth
+4_!pqh
+5_Nao frequentei uma universidade
+6_Escrevo pecas
+7_Escrevo poesia
+8_Minhas pecas sao montadas permanentemente
+9_Dizem que sou eterna
+10_Sou homem
+11_!pv
+12_!a3
+13_Saio-me bem na tragedia e na comedia
+14_Sou ator 
+15_Escrevi uma conhecidissima historia de amor
+16_Casei-me com 18 anos
+17_Conheco muito bem a natureza humana
+18_Filmaram muitas de minhas historias
+19_Dominei o globo
+20_Sou um dos maiores em minha especialidade
+cartao_VENUS_lugar
+1_Fico a 108 milhoes de quilometros do Sol 
+2_Nao tenho satelites
+3_Sou o planeta mais proximo da Terra
+4_!pv
+5_Agua e uma raridade em mim
+6_Sou o segundo planeta a partir do Sol
+7_Comecei a ser explorado na decada de 70
+8_Existe uma camisa com o meu nome
+9_Posso ser visto ao amanhacer ou ao entardecer
+10_!pqh
+11_Minha temperatura e de 462ºC
+12_Tenho o nome da deusa romana do amor e da beleza
+13_Meu nome comeca com V
+14_!a3
+15_!v3
+16_Tembem sou chamado de "Estrela D'Alva"
+17_Tenho varias crateras
+18_Sou quase do tamanho da Terra
+19_Tenho vulcoes em atividade
+20_Tambem sou chamado de "Estrela Vesper"
+cartao_CHAO_coisa
+1_Posso ser de muitos materias diferentes
+2_Na rua, sou aspero
+3_!pv
+4_Posso ser esburacado
+5_!a3
+6_Sempre estou por baixo
+7_Posso ser encerado
+8_Posso brilhar
+9_Voce sempre passa por mim
+10_Posso ser lavado
+11_Posso ser raspado
+12_Em uma cancao tenho estrelas
+13_Posso ser escorregadio
+14_Muitos riem quando alguem cai em cima de mim
+15_Os bebes me conhecem de perto
+16_!v3
+17_No rodeio, eu sou o limite
+18_!pqh
+19_A enceradeira me trata muito bem
+20_Estou em todas as casas
+cartao_ROBERTO CARLOS_pessoa
+1_Sou o unico artista latino americano a vender mais que os Beatles e Elvis
+2_Canto "Emcoes"
+3_!pqh
+4_Ando com um medalhao com a figura de cristo
+5_Nasci em Cachoeira do Itapemirim, Espirito Santo
+6_Minha mae e lady Laura
+7_Tive um namorico com Wanderleia
+8_Meu pai era relojoeiro
+9_Cantei pela primeira vez aos 9 anos numa radio da minha cidade
+10_Sou o pai da Jovem Guarda
+11_Fui casado com a atriz Miriam revista
+12_!a2
+13_!pv
+14_Ja cantei para o Papa
+15_Assumi a paternidade de um filho que tive com uma favorita
+16_Sempre apareco na sua casa nas vesperas de natal
+17_O azul e minha cor preferida
+18_Tenho varias superticoes
+19_Fui astro de um filme a 300km/h 
+20_Sou muito amigo do "Tremendao"
