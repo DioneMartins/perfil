@@ -16,7 +16,11 @@ void m_cartoes(){
         clear();
         if(c=='1') cadastra_c();
         else if(c=='2') exclui_c();
-        else if(c=='3') conta_c();
+        else if(c=='3') {
+            printf("Seu jogo tem %d cartoes.\n", conta_c());
+            printf("Pressione enter para continuar.\n");
+            flush();
+        }
         else if(c=='4') break;
         else printf("Opcao invalida.\n");
     }
@@ -68,7 +72,7 @@ int cadastra_c(){
     printf("Eu sou ");
     puts(nome);
     printf("Diga aos jogadores que eu sou "); printc(categoria);
-    for(i=0; i<20; i++) printd(i+1, dicas[i]);
+    for(i=0; i<20; i++) printd(i+1, dicas[i], 1);
     printf("Salvar cartao? [S/n]\n");
     opcao=getc(stdin);
     flush();
@@ -130,7 +134,7 @@ int conta_c(){
     file=fopen("banco.txt", "r+");
     if(file==NULL){
         printf("Erro abrindo arquivo.\n");
-        return 1;
+        return -1;
     }
     
     while(!feof(file)){
@@ -139,8 +143,5 @@ int conta_c(){
             descarte[3]=='t' && descarte[4]=='a' && descarte[5]=='o') i++;
     }
     fclose(file);
-    printf("Seu jogo tem %d cartoes.\n", i);
-    printf("Pressione enter para continuar.\n");
-    flush();
-    return 0;
+    return i;
 }

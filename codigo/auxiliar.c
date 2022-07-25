@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void flush(){
     while(getchar() != '\n');
@@ -15,8 +16,8 @@ void printc(char *categoria){
     puts(categoria);
 }
 
-void printd(int i, char *dica){
-    printf("%d. ", i);
+void printd(int i, char *dica, int printnum){
+    if(printnum) printf("%d. ", i);
     if(dica[0]=='!'){
         switch(dica[1]){
             case 'p':
@@ -35,4 +36,17 @@ void printd(int i, char *dica){
                 break;
         }
     }else puts(dica);
+}
+
+int randint(int n) {
+    int r, p=RAND_MAX/n, x=0, y=x+p, i=0;
+    srand(time(NULL));
+    r=rand();
+    while(x<RAND_MAX){
+        if(r>x && r<y) break;
+        i++;
+        x=y;
+        y=x+p;
+    }
+    return i;
 }
