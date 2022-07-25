@@ -26,8 +26,9 @@ int main() {
 void v_menu(){
     printf("Menu inicial...\n"
         "1 Jogar\n"
-        "2 Menu de cartoes\n"
-        "3 Sair\n"
+        "2 Tutorial\n"
+        "3 Menu de cartoes\n"
+        "4 Sair\n"
     );
 }
 
