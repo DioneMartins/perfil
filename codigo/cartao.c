@@ -89,6 +89,7 @@ int cadastra_c(){
     fclose(file);
 
     printf("Salvo com sucesso. Pressione qualquer tecla para voltar ao menu.\n");
+    flush();
     return 0;
 }
 

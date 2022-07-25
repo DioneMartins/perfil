@@ -22,7 +22,7 @@ JOGADOR cadastra_jogador(int i);
 CARTAO escolhe_cartao(FILE *f, int r);
 void exibe_dicas(int dicas_usadas[], size_t n); int dica_ja_usada(int dicas_usadas[], int dica);
 void palpite_a_qualquer_hora(JOGADOR jog[], int n, char *input, int jog_atual, RODADA rodada);
-void palpite(JOGADOR jogador, RODADA rodada, char *input, int pontua, int *vence);
+void palpite(JOGADOR jogador, RODADA rodada, char *input, int pontua, int *vence, int exibe);
 int final_rodada(RODADA rodada, JOGADOR jogadores[], int n, int *med);
 void tela_final(JOGADOR jogadores[], int n);
 int is_okay(int r, int cartoes[5]);
@@ -31,9 +31,9 @@ int i_jogo(){
     JOGADOR *jog;
     int c=0; int i;
 
-    printf("Quantos jogadores vao participar? [2-6] ");
+    printf("Quantos jogadores vao participar? [2-10] ");
     scanf("%d", &c); flush();
-    if(c<2 && c>6) {
+    if(c<2 && c>10) {
         printf("Valor invalido.\n");
         return 1;
     }
@@ -89,6 +89,7 @@ int m_jogo(JOGADOR jogadores[], int count){
     /*Loop do jogo*/
     while(fim_do_jogo==0){
         /*Nova rodada*/
+        printf("Aguarde...\n");
         while(1){
             cartao_da_vez=randint(total_c);
             if(is_okay(cartao_da_vez, ultimos_cartoes)){
@@ -97,6 +98,7 @@ int m_jogo(JOGADOR jogadores[], int count){
                 }
                 ultimos_cartoes[4]=cartao_da_vez;
                 rodada.cartao=escolhe_cartao(file, cartao_da_vez);
+                break;
             }
         }
 
@@ -109,6 +111,7 @@ int m_jogo(JOGADOR jogadores[], int count){
 
         for(x=0; x<count; x++) jogadores[x].ficha=0;
 
+        clear();
         while(1){
             uso=0;
             if(vez!=med){
@@ -118,11 +121,12 @@ int m_jogo(JOGADOR jogadores[], int count){
                 printf("\nEu sou... "); printc(rodada.cartao.categoria);
                 exibe_dicas(rodada.cartao.dicas_usadas, (sizeof(rodada.cartao.dicas_usadas)/sizeof(int)));
                 printf("\nPronto, jogador %s... Que dica voce quer? [1-20] ", jogadores[vez].nome);
-                scanf("%d", &int_input);
+                scanf("%d", &int_input); flush();
                 uso=dica_ja_usada(rodada.cartao.dicas_usadas, int_input);
                 if(int_input<1 || int_input>20 || uso){
                     if(!uso) printf("Opcao invalida\n");
                     else printf("Dica ja pedida.\n");
+                    uso=1;
                 }
                 else{
                     printf("Atencao, mesa... ");
@@ -146,7 +150,7 @@ int m_jogo(JOGADOR jogadores[], int count){
                                 while(1){
                                     andou=0;
                                     printf("Que jogador você escolhe? (exceto si mesmo) \n");
-                                    flush(); fgets(string_input, 50, stdin);
+                                    fgets(string_input, 50, stdin);
                                     string_input[strlen(string_input)-1] = '\0';
                                     if(strcmp(string_input, jogadores[vez].nome)==0) printf("Voce nao pode escolher a si mesmo!");
                                     else {
@@ -166,7 +170,7 @@ int m_jogo(JOGADOR jogadores[], int count){
                                 while(1){
                                     andou=0;
                                     printf("Que jogador você escolhe? (exceto si mesmo) \n");
-                                    flush(); fgets(string_input, 50, stdin);
+                                    fgets(string_input, 50, stdin);
                                     string_input[strlen(string_input)-1] = '\0';
                                     if(strcmp(string_input, jogadores[vez].nome)==0) printf("Voce nao pode escolher a si mesmo!\n");
                                     else {
@@ -186,12 +190,11 @@ int m_jogo(JOGADOR jogadores[], int count){
                     }
                     if(comando!=1){
                         printf("\nJogador %s... Qual e o seu palpite? [50] ", jogadores[vez].nome);
-                        flush();
                         fgets(string_input, 50, stdin);
                         string_input[strlen(string_input)-1] = '\0'; /*Remove \n*/
                         if(string_input[0]=='!')
                             palpite_a_qualquer_hora(jogadores, count, string_input, vez, rodada);
-                        else palpite(jogadores[vez], rodada, string_input, vez, &rodada.vencedor);
+                        else palpite(jogadores[vez], rodada, string_input, vez, &rodada.vencedor, 0);
                     }
                 }
                 if(rodada.vencedor!=-1) {
@@ -281,12 +284,13 @@ void palpite_a_qualquer_hora(JOGADOR jog[], int n, char *input, int jog_atual, R
             if(strcmp(nome, jog[i].nome)==0){
                 encontrado=1;
                 if(jog[i].ficha==1) {
-                    palpite(jog[i], rodada, input, jog_atual, &rodada.vencedor);
-                    if(rodada.vencedor==-1) palpite(jog[jog_atual], rodada, input, jog_atual, &rodada.vencedor);
+                    jog[i].ficha=0;
+                    palpite(jog[i], rodada, input, jog_atual, &rodada.vencedor, 1);
+                    if(rodada.vencedor==-1) palpite(jog[jog_atual], rodada, input, jog_atual, &rodada.vencedor, 1);
                 }
                 else {
-                    printf("Voce nao tem palpites.\n");
-                    palpite(jog[jog_atual], rodada, input, jog_atual, &rodada.vencedor);
+                    printf("Voce nao tem palpites.\n"); flush();
+                    palpite(jog[jog_atual], rodada, input, jog_atual, &rodada.vencedor, 0);
                 }
                 break;
             }
@@ -294,12 +298,12 @@ void palpite_a_qualquer_hora(JOGADOR jog[], int n, char *input, int jog_atual, R
     }
     if(!encontrado){
         printf("Jogador nao encontrado ou formato incorreto.\n");
-        palpite(jog[jog_atual], rodada, input, jog_atual, &rodada.vencedor);
+        palpite(jog[jog_atual], rodada, input, jog_atual, &rodada.vencedor, 0);
     }
 }
 
-void palpite(JOGADOR jogador, RODADA rodada, char *input, int pontua, int *vence){
-    if(input[0]=='!'){
+void palpite(JOGADOR jogador, RODADA rodada, char *input, int pontua, int *vence, int exibe){
+    if(exibe){
         printf("\nJogador %s... Qual e o seu palpite? [50] ", jogador.nome);
         fgets(input, 50, stdin);
         input[strlen(input)-1]='\0';
