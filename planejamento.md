@@ -1,3 +1,6 @@
+# Introdução
+Esse arquivo é somente o brainstorming inicial sobre o projeto.
+
 # Brainstorming
 
 Tabuleiro, interface para inserir novos cartões, cartões, sistema de resposta, multiplayer, pontuação.
