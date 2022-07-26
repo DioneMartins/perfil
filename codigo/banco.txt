@@ -312,7 +312,8 @@ cartao_ROBERTO CARLOS_pessoa
 17_O azul e minha cor preferida
 18_Tenho varias supersticoes
 19_Fui astro de um filme a 300km/h 
-20_Sou muito amigo do "Tremendao"cartao_ALCATRAZ_lugar
+20_Sou muito amigo do "Tremendao"
+cartao_ALCATRAZ_lugar
 1_Localizo-me perto de uma ponte.
 2_Diziam que eu era de seguranca maxima.
 3_Meu forte nao e a liberdade.
@@ -333,3 +334,45 @@ cartao_ROBERTO CARLOS_pessoa
 18_!v2
 19_Fico no litoral de San Francisco.
 20_Meu nome comeca com a primeira letra do alfabeto e termina com a ultima.
+cartao_JAPAO_lugar
+1_Minha moeda e o iene
+2_Dizem que existo desde 660 a.C
+3_Estou cercado por agua
+4_Garfo e faca sao dificeis de serem usados por mim
+5_Preciso importar petroleo
+6_Sou notavel pelas minhas industrias
+7_Meu cardapio tem muito peixe
+8_Sou mal dotado de recursos naturais
+9_Sou lider na construcao de grandes navios
+10_Sou um arquipelogo com mais de 3000 pequenas ilhas
+11_Um palpite a qualquer hora
+12_Meu indice de analfabetismo e insignificante
+13_Minhas intituicoes financeiras sao bastante fortes
+14_!v5
+15_!pv
+16_Tenho a mais longa sequencia de imperadores
+17_!jv2
+18_Estive em muitos filmes de guerra
+19_Estou ao norte do Equador
+20_Sou um aliado que ja foi um inimigo
+cartao_ARNOLD SCHWARZENEGGER_pessoa
+1_!pv
+2_Ja fui Mister Universo
+3_Tenho 56 centimetros de biceps
+4_Sou um ator
+5_Passei a infancia na Austria
+6_Trabalhei em "Inferno Vermelho"
+7_!v2
+8_Apareco quase nu em um filme
+9_Estudei economia
+10_Promovi competicoes de cultura fisica
+11_Ja fiquei gravido
+12_!jv3
+13_Ja fui gala de "True Lies"
+14_Trabalhei como policial num jardim de infancia
+15_Tenho um belo fisico
+16_Minha frase mais famosa e "Hasta la vista, baby!"
+17_Trabalhei em "Comando para Matar"
+18_Fiz "Jogo Bruto"
+19_Sou um dos socios dos restaurantes Planet Hollywood
+20_Gosto dos filmes do Hercules
