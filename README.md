@@ -8,3 +8,8 @@ Ele pode ser compilado com gcc com as tags wall, ansi e pedantic, da seguinte fo
 
 # Uso
 O código pode ser usado para trabalhos escolares ou universitários. Para uso comercial, dê créditos e entre em contato através do email <profissionaldione@gmail.com>
+
+
+# Link
+
+<https://github.com/DioneMartins/perfil>
