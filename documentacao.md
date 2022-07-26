@@ -1,2 +1,0 @@
-Preparar um relatório contendo uma descrição sobre os objetivos do trabalho, as premissas consideradas no desenvolvimento do jogo, uma descrição do jogo e as regras que o usuário deve seguir. Além disso, o relatório deve conter a saída da execução do simulador, além das ferramentas que foram aprendidas ao longo do curso e utilizadas para a elaboração do trabalho, bem como as referências, caso tenha sido usada uma ou mais ferramentas adicionais.
-
