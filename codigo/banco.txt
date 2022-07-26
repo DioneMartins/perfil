@@ -418,3 +418,87 @@ cartao_UFRJ_lugar
 18_Uma das maiores da America Latina
 19_Possui a setima escola de engenharia mais antiga do mundo
 20_!pv
+cartao_INCONFIDENCIA MINEIRA_coisa
+1_Aconteci no final do seculo XVIII
+2_!jv2
+3_!pqh
+4_Um ex-dentista faz parte da minha historia
+5_Fui uma revolta contra Portugal
+6_Impostos altos me motivaram
+7_Vi um caso de traicao
+8_Descobri que Joaquim Silverio dos Reis era um delator
+9_Intelectuais, advogados e poetas me organizaram
+10_O meu centro ja foi a cidade mineira de Vila Rica
+11_Acabei num ennforcamento
+12_Comecei a tramar a independencia do Brasil
+13_Um de meus lideres virou martir
+14_!a5
+15_Tomas Antonio Gonzaga faz parte de mim
+16_Minha bandeira era branca e verde
+17_Joaquim Jose da Silva Xavier fez parte de mim
+18_Criei o primeiro heroi brasileiro
+19_Vi um corpo ser esquartejado
+20_Claudio Manuel de Costa fez parte de mim
+cartao_CAETANO VELOSO_pessoa
+1_!v3
+2_Ja fui critico do cinema
+3_Participei do grupo Doces Barbaros
+4_Meu pai trabalhava nos Correios
+5_Vivi exilado em Londres
+6_!pv
+7_Lancei o livro "Verdade Tropical" em 1997
+8_Sou casado com uma atriz bem mais jovem que eu
+9_Nasci em 1942
+10_Gravei "É proibido proibir"
+11_Chamo-me Emanuel, mas poucos sabem disso
+12_Minha irma e uma cantora muito telentosa
+13_Escrevi para "o Pasquim"
+14_!pqh
+15_"Alegria, alegria" e um dos meus maiores sucessos
+16_Nasci em Santo Amara de Purificacao, na Bahia
+17_Tenho experiencias em festivais
+18_Sou um dos pais da Tropicalia
+19_Gravei o frevo "Chuva, suor e cerveja"
+20_"Prenda Minha" e o nome de um dos meus CDs
+cartao_ARGENTINA_lugar
+1_Minha carne e forte
+2_Faco parte do mercosul
+3_Minha capital foi fundada em 1560
+4_Sou um pais de colonizacao espanhola
+5_Fico na America do sul
+6_Voce me viu no filme "Evita"
+7_Ja fui sede do vice-reinado da Prata
+8_O general San Martin faz parte de minha historia
+9_Enfrentei o Brasil numa guerra entre 1825 e 1828
+10_!pv
+11_Jean Domingo Perao ja foi meu presidente
+12_Fui sede de uma copa do mundo
+13_Sou vizinho do Brasil
+14_Entrei em guerra contra os ingleses
+15_A terra do fogo faz parte de meu territorio
+16_Tenho 35 milhoes de habitantes
+17_!pqh
+18_!v2
+19_Ja vivi muitos golpes militares
+20_Tenho um grupo de maes muito conhecido
+cartao_LEAO_coisa
+1_Posso fazer parte de um circo
+2_Tenho aparecido em muitos filmes
+3_Posso ter 3 metros de comprimento
+4_Sou cosiderado um rei
+5_!ja2
+6_Estou no horoscopo
+7_Como 5 quilos de carne por dia
+8_Sou o simbolo da Gra-Bretania
+9_!pqh
+10_Sou o nome de um ex-goleiro
+11_Para mim, 20 anos ja e uma idade avancada
+12_Sou muito cabeludo
+13_!pv
+14_Tenho cauda
+15_Muitas criancas ja me viram em desenho nos cinemas
+16_Sou, de certa forma, parente de gatos
+17_Sou um matador
+18_Fiz propaganda para o imposto de renda
+19_Colecionam minhas garras
+20_Posso pesar 270 quilos
