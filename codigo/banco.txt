@@ -376,3 +376,45 @@ cartao_ARNOLD SCHWARZENEGGER_pessoa
 18_Fiz "Jogo Bruto"
 19_Sou um dos socios dos restaurantes Planet Hollywood
 20_Gosto dos filmes do Hercules
+cartao_MURALHA DA CHINA_lugar
+1_Tenho 16 metros de altura
+2_Nao sou reta
+3_!jv1
+4_Sou Fortificada
+5_Posso ser vista do espaco
+6_Fui feita por 300 mil homens
+7_Fui usada contra invasores
+8_Nao foram usadas maquinas na minha criacao
+9_Sou uma estrada para cavaleiros
+10_!pqh
+11_Posso proteger
+12_Sou muito comprida: 2450Km de extensao
+13_Fui criada com propositos defensivos
+14_Sou asiatica
+15_Sou feita de pedra
+16_As pessoas me visitam diariamente
+17_Ja tive 40 mil torres de observacao
+18_Existo ha seculos antes do nascimento de Cristo
+19_!pv
+20_Minha execucao levou centenas de anos
+cartao_UFRJ_lugar
+1_A melhor federal do Brasil
+2_!v5
+3_Fundada em 7 de Setembro de 1920
+4_Originalmente, foi pensada para ser em Sao Cristovao
+5_Durante a era Vargas mudaram meu nome
+6_Minha parte principal esta numa ilha
+7_Muitos famosos passaram por mim como: Clarisse Lispector, Miguel Falabella e Rogerio Skylab
+8_Foi a primeira universidade criada pelo Governo Federal
+9_!pv
+10_Fez 100 anos recentemente
+11_Tem a Minerva como simbolo
+12_Tenho mais de um centro
+13_E um centro cultural
+14_Ganhou seu nome atual no governo de Castelo Branco
+15_!ja10
+16_Proximo ao famoso Cobal
+17_Tem renome no mundo inteiro
+18_Uma das maiores da America Latina
+19_Possui a setima escola de engenharia mais antiga do mundo
+20_!pv
